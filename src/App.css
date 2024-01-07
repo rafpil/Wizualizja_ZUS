@@ -1,0 +1,34 @@
+html, body {
+  @apply min-h-screen text-txt-primary bg-secondary scroll-smooth text-lg font-['QuicksandRegular']
+}
+
+.main-app-container {
+  @apply flex justify-center items-center flex-col
+}
+
+.main-header-container {
+  @apply flex justify-center items-center h-28 text-xl sm:text-3xl;
+}
+
+a {
+  @apply relative;
+  transition: color 0.3s;
+}
+a:hover {
+  @apply text-success;
+}
+
+a:after{
+  content: "";
+  @apply w-0 h-px absolute top-full left-0;
+  @apply bg-gradient-to-r from-transparent to-success;
+  transition: width 0.3s;
+}
+
+a:hover:after {
+  @apply w-full;
+}
+
+abbr {
+  @apply no-underline;
+}
